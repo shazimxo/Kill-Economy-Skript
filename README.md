@@ -10,3 +10,6 @@ Everything here can be changed in the Skript.
 
 ### Death Messages:
 <img width="835" height="89" alt="death message" src="https://github.com/user-attachments/assets/1dec346b-8974-4a87-b35b-a87022858e2f" />
+
+### Withdraw:
+<img width="835" height="135" alt="withdraw" src="https://github.com/user-attachments/assets/6679f58f-1a3d-4f20-b82f-2306e49836f6" />
