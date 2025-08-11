@@ -8,5 +8,5 @@ Here is a quick little preview of the whole Skript.
 
 Everything here can be changed in the Skript.
 
-## Death Messages:
+### Death Messages:
 <img width="835" height="89" alt="death message" src="https://github.com/user-attachments/assets/1dec346b-8974-4a87-b35b-a87022858e2f" />
