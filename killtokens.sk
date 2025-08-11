@@ -1,0 +1,82 @@
+# -------------------------------------------------------------
+#  .____     _________.__                  .__            ____. 
+#  |   _|   /   _____/|  |__ _____  _______|__| _____    |_   | 
+#  |  |     \_____  \ |  |  \\__  \ \___   /  |/     \     |  | 
+#  |  |     /        \|   Y  \/ __ \_/    /|  |  Y Y  \    |  | 
+#  |  |_   /_______  /|___|  (____  /_____ \__|__|_|  /   _|  | 
+#  |____|          \/      \/     \/      \/        \/   |____|
+#
+#                        Kill Token Skript
+# You may use, but I ask you don't claim as your own creation, thanks!
+#
+#                        Made By: Shazim
+
+options:
+	# ------------------------------------------------------
+	#  MESSAGES - KEY:
+	#
+	# %victim% = The person who died
+	# {balance.%uuid of player%} = Kill Token Balance/System. [DON'T MESS WITH!]
+	#
+	# ------------------------------------------------------
+	# On Death:
+	death: &cYou have killed %victim%, and you now have &c&l%{balance.%uuid of attacker%}%&c kill tokens. # Sent to Killer
+	# Withdraw:
+	successful-withdraw: &aYou have successfully withdrawed %arg-1% amount of kill tokens, and now have %{balance.%uuid of player%}% kill tokens in your bank.
+	insufficient-withdraw: &cYou do not have enough kill tokens to withdraw. Please choose a lower number.
+	invalid-withdraw: &cYou cannot without %arg-1% kill tokens. Please try a different number.
+    # Balance:
+	self-balance: &cYou have &c&l%{balance.%uuid of player%}%&c amount of kill tokens.
+	other-balance: &c%arg-1% has &c&l%{balance.%uuid of arg-1%}%&c kill tokens.
+	unknown-balance: &cUnknown user.
+    # Manually Adding Kill Tokens:
+	permission-message: &c&l[!]&c You do not have permission to use this command.
+	added-tokens: &cYou have added %arg-1% tokens, and now have %{balance.%uuid of player%}% kill tokens.
+    # Depositing:
+	deposit-message: &aYou have successfully deposited 1 Kill Token.
+
+on load:
+	broadcast "&c&lKill Tokens 0.1 &chas loaded, created by Shazim."
+	broadcast "<link:https://github.com/shazimxo><tooltip:&bClick here!>&bClick here for my Github!<reset>"
+
+on death of player:
+	if attacker is player:
+		add 1 to {balance.%uuid of attacker%}
+		send "{@death}" to attacker
+    
+command /withdraw <integer>:
+    trigger:
+        if arg-1 is greater than {balance.%uuid of player%}:
+            send "{@insufficient-withdraw}" to player
+            stop
+        if arg-1 is less than or equal to 0:
+            send "{@invalid-withdraw}" to player
+            stop
+        if arg-1 is less than or equal to {balance.%uuid of player%}:    
+            give player arg-1 of redstone named "&cKill Token"
+            remove arg-1 from {balance.%uuid of player%}
+            send "{@successful-withdraw}" to player
+            
+command /balance <offline player>:
+	aliases: /bank, /bal, /killtokens, /killbank
+	trigger:
+		if arg-1 is not set:
+			send "{@self-balance}" to player
+		if arg-1 is set:
+			if {balance.%uuid of arg-1%} is set:
+				send "{@other-balance}" to player
+			if {balance.%uuid of arg-1%} is not set:
+				send "{@unknown-balance}" to player
+		
+command /addkilltokens <integer>:
+	permission: killtokens.add
+	permission message: {@permission-message}
+	trigger:
+		add arg-1 to {balance.%uuid of player%}
+		send "{@added-tokens}" to player
+		
+on right click with redstone:
+    if name of player's tool is "&cKill Token":
+        remove 1 of player's held item from player's inventory
+        add 1 to {balance.%uuid of player%}
+        send "{@deposit-message}" to player
