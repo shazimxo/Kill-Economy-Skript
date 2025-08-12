@@ -36,7 +36,7 @@ Here is a quick little preview of the whole Skript.
 <img width="730" height="92" alt="Screenshot 2025-08-11 190421" src="https://github.com/user-attachments/assets/33fbe367-951c-484e-8049-bb5baf13aff1" />
 
 
-<p align="center">------------------------------------------------------------------</p>
+<p align="center">୨---------------------------------------------------------------------------------୧</p>
 <p align="center"><i>If you have any questions, or wish to support my work, you may do so using the links below.</i></p>
 <div align="center" style="margin-top: 15px;">
   <a href="https://discord.com/users/810632160418988053">
