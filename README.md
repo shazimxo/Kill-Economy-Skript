@@ -1,4 +1,4 @@
-# Kill-Economy-Skript-
+# Kill-Economy-Skript
 A simple Skript that uses killing as a currency. Includes customizable messages, withdrawing and depositing, and more!
 
 Note: I won't be updating this Skript. Please contact me using my Discord below if you need any assistance with anything.
@@ -10,6 +10,13 @@ This Skript includes:
 - Giving yourself Kill Tokens
 - Full Customization
 - And more!
+
+Available Commands:
+- /withdraw <number>
+- /balance <player>
+- /deposit
+- /addkilltokens <number>
+  - Permission Node: killtokens.add
 
 # Preview
 Here is a quick little preview of the whole Skript.
