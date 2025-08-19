@@ -33,6 +33,7 @@ Here is a quick little preview of the whole Skript.
 <img width="835" height="135" alt="withdraw" src="https://github.com/user-attachments/assets/6679f58f-1a3d-4f20-b82f-2306e49836f6" />
 
 ### Balance:
+<p><i>Message varies depending on usage of command.</i></p>
 <img width="685" height="134" alt="balance" src="https://github.com/user-attachments/assets/8065ec92-4eab-49ae-9498-eacc59d4a373" />
 
 ### Deposit:
