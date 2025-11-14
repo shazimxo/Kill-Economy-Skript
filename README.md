@@ -44,12 +44,12 @@ Here is a quick little preview of the whole Skript.
 <p align="center"><i>If you have any questions, or wish to support my work, you may do so using the links below.</i></p>
 <div align="center" style="margin-top: 15px;">
   <a href="https://discord.com/users/810632160418988053">
-    <img src="https://img.shields.io/badge/Discord-shxzim-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+    <img src="https://img.shields.io/badge/Discord-cozykittyy.-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
-  <a href="https://www.youtube.com/@shazimxo">
-    <img src="https://img.shields.io/badge/YouTube-shazimxo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  <a href="https://www.youtube.com/@cozykittyyy">
+    <img src="https://img.shields.io/badge/YouTube-cozykittyyy-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
-  <a href="https://discord.com/users/810632160418988053">
-    <img src="https://img.shields.io/badge/Twitch-shazimxo-6441a5?style=for-the-badge&logo=twitch&logoColor=white" />
+  <a href="https://twitch.tv/shxzim">
+    <img src="https://img.shields.io/badge/Twitch-shxzim-6441a5?style=for-the-badge&logo=twitch&logoColor=white" />
   </a>
 </div>
